@@ -1,0 +1,7 @@
+bug1：RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:2 and cuda:0! (when checking argument for argument index in method wrapper_CUDA__index_select)
+解决：删除llama2-7b-chinese模型初始化时的参数device_map='auto',
+bug2：import datasets error
+解决：将文件内置datasets模块改名datasetss
+bug3：TypeError: LlamaModel.forward() got an unexpected keyword argument 'labels'
+解决：peft_model.py   line926   注释
+bug4：

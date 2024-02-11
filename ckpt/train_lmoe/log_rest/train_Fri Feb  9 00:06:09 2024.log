@@ -1,0 +1,69 @@
+2024-02-09 00:06:10,259 - /home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/torio/_extension/utils.py[line:114] - DEBUG: Loading FFmpeg6
+2024-02-09 00:06:10,260 - /home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/torio/_extension/utils.py[line:120] - DEBUG: Failed to load FFmpeg6 extension.
+Traceback (most recent call last):
+  File "/home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/torio/_extension/utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "/home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/torio/_extension/utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/torch/_ops.py", line 933, in load_library
+    ctypes.CDLL(path)
+  File "/home/snowwolf/miniconda3/envs/llama2/lib/python3.11/ctypes/__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: libavutil.so.58: cannot open shared object file: No such file or directory
+2024-02-09 00:06:10,263 - /home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/torio/_extension/utils.py[line:114] - DEBUG: Loading FFmpeg5
+2024-02-09 00:06:10,263 - /home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/torio/_extension/utils.py[line:120] - DEBUG: Failed to load FFmpeg5 extension.
+Traceback (most recent call last):
+  File "/home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/torio/_extension/utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "/home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/torio/_extension/utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/torch/_ops.py", line 933, in load_library
+    ctypes.CDLL(path)
+  File "/home/snowwolf/miniconda3/envs/llama2/lib/python3.11/ctypes/__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: libavutil.so.57: cannot open shared object file: No such file or directory
+2024-02-09 00:06:10,264 - /home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/torio/_extension/utils.py[line:114] - DEBUG: Loading FFmpeg4
+2024-02-09 00:06:10,302 - /home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/torio/_extension/utils.py[line:120] - DEBUG: Failed to load FFmpeg4 extension.
+Traceback (most recent call last):
+  File "/home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/torio/_extension/utils.py", line 109, in _find_versionsed_ffmpeg_extension
+    return importlib.import_module(ext)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/snowwolf/miniconda3/envs/llama2/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 676, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 573, in module_from_spec
+  File "<frozen importlib._bootstrap_external>", line 1233, in create_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+ImportError: libavdevice.so.58: cannot open shared object file: No such file or directory
+2024-02-09 00:06:10,304 - /home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/torio/_extension/utils.py[line:114] - DEBUG: Loading FFmpeg
+2024-02-09 00:06:10,304 - /home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/torio/_extension/utils.py[line:120] - DEBUG: Failed to load FFmpeg extension.
+Traceback (most recent call last):
+  File "/home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/torio/_extension/utils.py", line 106, in _find_versionsed_ffmpeg_extension
+    raise RuntimeError(f"FFmpeg{version} extension is not available.")
+RuntimeError: FFmpeg extension is not available.
+2024-02-09 00:07:05,551 - /home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/filelock/_api.py[line:254] - DEBUG: Attempting to acquire lock 140287910751952 on /home/snowwolf/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+2024-02-09 00:07:05,552 - /home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/filelock/_api.py[line:257] - DEBUG: Lock 140287910751952 acquired on /home/snowwolf/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+2024-02-09 00:07:05,552 - /home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/filelock/_api.py[line:286] - DEBUG: Attempting to release lock 140287910751952 on /home/snowwolf/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+2024-02-09 00:07:05,552 - /home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/filelock/_api.py[line:289] - DEBUG: Lock 140287910751952 released on /home/snowwolf/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+2024-02-09 00:07:05,552 - /home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/filelock/_api.py[line:254] - DEBUG: Attempting to acquire lock 140291391755600 on /home/snowwolf/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+2024-02-09 00:07:05,552 - /home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/filelock/_api.py[line:257] - DEBUG: Lock 140291391755600 acquired on /home/snowwolf/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+2024-02-09 00:07:05,552 - /home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/filelock/_api.py[line:286] - DEBUG: Attempting to release lock 140291391755600 on /home/snowwolf/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+2024-02-09 00:07:05,552 - /home/snowwolf/miniconda3/envs/llama2/lib/python3.11/site-packages/filelock/_api.py[line:289] - DEBUG: Lock 140291391755600 released on /home/snowwolf/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
